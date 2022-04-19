@@ -37,23 +37,19 @@ Data features that we have explored include
 7) Lagged effect of precipitation on WNV presence
 8) Station pressure having inverse relationship with precipitation and by extension WNV
 
-#### About: Model Exploration and Feature Selection
+#### About: Model Exploration and Feature Selection and Model Selection
 
-Models that we ran through included
-1) Logistic Regression
-2) 
-3) 
-4)
-5)
-6)
-7)
-8)
-9)
+Models that we ran through included Logistic Regression, Random Forest, SVM, ExtraTrees, ADA Boost, Gradient Boost and Neural Network.
+Due to the paucity of positive cases (i.e. WNV Positive) in our dataset, we had to SMOTE our train data for WNV present cases to allow for better training of the model, and to also not get a model where the accuracy high, but is simply the negative class.
+
+For feature engineering, we did some changes such as having interaction terms, which eventually turned out interaction between terms scuh as average temperature with precipitation.
+
+Eventually, we decided to go for Logistic Regression as it is able to quantify the impact of features on the probability of WNV, and the AUC (Area under the curve) ROC (receiver operating characteristics) curve is quite clsoe to the other models. 
 
 
 #### About: Cost Benefit Analysis
 
-
+Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the cost saved if citizens do not get infected with the virus. By also estimating the area where we need to spray, based on traps with WNV present, we found out that it is not as expensive even if we were to spray generously, compared to the cost saved.
 
 
 
@@ -63,12 +59,5 @@ Models that we ran through included
 
 
 
-Our best model for accuracy would be that of the Multinomial NB, TVEC. This model improved our score from the baseline of 65.0% to 69.6%.
-
-For our inquiry into brand differentiation using the best features/ estimators from our various models, main words that differentiate us from DoorDash seems to be "Plus Card" and "Quests", which seems like good anchors. We other word might be seasonal- "surge"s seem to be a good trend which our drivers enjoy.
-
-For our enquiry into the general sentiments towards the two companies, both of us share the communities' concern towards time-related words, while our community can be differentiated from DoorDash's by the word "good". We will take note of this positive trend.
-
-For further steps, We can do more textual analysis on the texts containing these differentiating words. The Words that are of importance in a particular time frame, and we will have to continuously measure these data to update our knowledge of our drivers and users, and our branding
 
 ---
