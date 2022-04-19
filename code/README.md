@@ -2,33 +2,66 @@
 
 ### Description
 
-We are a team of analysts from Uber Eats, attempting to find out if there is brand differentiation between our platform and Door Dash, and what are the general trends in vernacular that our Uber Eats community, both drivers and users, are using.
-
-These will seek to inform our marketing team about how we can bring out brand forward, and also our platform/product management team on how we can improve our services.
-
-We will be using subreddit posts to find out what words differentiate us from our competitor, and which words are most commonly used amongst the communities.
-
-We will explore various models to find out which is the most accurate, as being able to get the highest accuracy of identifying our competitor and our own will allow us to utilise the differentiating words well (these words are able to tell us and DoorDash apart).
-
-Caveats: Throughout this document, there would be references to DD and UE, which are the acronyms for DoorDash and Uber Eats respectively. This will be even more commonly used when labelling our data.
+1. As an employee of Disease And Treatment Agency, division of Societal Cures In Epidemiology and New Creative Engineering (DATA-SCIENCE), we are tasked to better understand the mosquito population and advise on appropriate interventions which are beneficial and cost-effective for the city.
 
 
-#### About the API
+2. Through this exploration, we hope to:
 
-Data has been scraped using this API: https://github.com/pushshift/api
-And our Subreddits are UberEATS and doordash 
+- Identify features which are most important to predict presence of West Nile Virus (which can be done by ranking the coefficients of each feature in a logistic regression model)
+- Predict the probability of West Nile Virus (WNV) by location to provide decision makers an effective plan to deploy pesticides throughout the city, which consequently can help to reduce cost.
+
+
+#### About: The Datasets and Data Cleaning
+
+Data has been given to us for mosquito traps set up all over Chicago, and the number of mosquito trapped and presence of WNV. These are spread out across multiple years and within the years, multiple dates where data was collected. For the test dataset, there are different years compared to that of the train.
+
+Weather data was also provided, which was collected by 2 different weather stations, with features such as average temperature, rainfall, and sun rise and sunset.
+
+Spray data, which aims to reduce the population of mosquitoes, also was provided.
+
+Null values were cleaned for the data sets, and certain missing values were interpolated and imputed.
+
 
 ---
 
-### Analysis
+#### About: Exploratory Data Analysis
 
-We went through several models to attempt to find out whether there are differences between us and the competitor, and if so, what are the words that differentiate us. The models we used to check are the MultiNomial Naive Bayes model, with both CVEC and TVEC, and Random Forest with Extra Trees. 
+Data features that we have explored include
 
-To find out the dominant vernacular of the period, we did a count of top bigrams and singular words.
+1) WNV presence by year
+2) WNV presence in traps
+3) Existence of co-relation spatially for WNV
+4) Whether data can be used since there are missing data between years 
+5) Weeks which WNV has peaked
+6) Weather variables that might have contributed to peaks (e.g. high temperatures and precipitation)
+7) Lagged effect of precipitation on WNV presence
+8) Station pressure having inverse relationship with precipitation and by extension WNV
+
+#### About: Model Exploration and Feature Selection
+
+Models that we ran through included
+1) Logistic Regression
+2) 
+3) 
+4)
+5)
+6)
+7)
+8)
+9)
+
+
+#### About: Cost Benefit Analysis
+
+
+
+
 
 ---
 
 ## Conclusions, Recommendations:
+
+
 
 Our best model for accuracy would be that of the Multinomial NB, TVEC. This model improved our score from the baseline of 65.0% to 69.6%.
 
