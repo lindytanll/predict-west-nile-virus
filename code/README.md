@@ -37,10 +37,13 @@ Data features that we have explored include
 7) Lagged effect of precipitation on WNV presence
 8) Station pressure having inverse relationship with precipitation and by extension WNV
 
+
 #### About: Model Exploration and Feature Selection and Model Selection
 
 Models that we ran through included Logistic Regression, Random Forest, SVM, ExtraTrees, ADA Boost, Gradient Boost and Neural Network.
 Due to the paucity of positive cases (i.e. WNV Positive) in our dataset, we had to SMOTE our train data for WNV present cases to allow for better training of the model, and to also not get a model where the accuracy high, but is simply the negative class.
+
+For model selection: 
 
 For feature engineering, we did some changes such as having interaction terms, which eventually turned out interaction between terms scuh as average temperature with precipitation.
 
@@ -49,7 +52,7 @@ Eventually, we decided to go for Logistic Regression as it is able to quantify t
 
 #### About: Cost Benefit Analysis
 
-Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the cost saved if citizens do not get infected with the virus. By also estimating the area where we need to spray, based on traps with WNV present, we found out that it is not as expensive even if we were to spray generously, compared to the cost saved.
+Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the cost saved if citizens do not get infected with the virus. By estimating the area where we need to spray based on a radius around the traps, we found out that the cost saved and public good done will be higher than the costs of spraying.
 
 
 
