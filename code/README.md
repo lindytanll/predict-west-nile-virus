@@ -54,15 +54,31 @@ Eventually, we decided to go for Logistic Regression as it is able to quantify t
 
 Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the number of people who might get the virus, and subsequently cost saved if citizens do not get infected with the virus. By estimating the area where we need to spray based on a 1Km radius around the traps, we found out that the cost saved will be higher than the costs of spraying, even before factoring any factors of increased public health and reduced disamenities.
 
-We subsequently tried another model of 30% threshold to be considered as a positive case, which deferred from the default 50%. This means that more cases will be considered as positives, and we are able to catch more true positive cases. However, more false negative cases will be cause as well, and a wider area has to be sprayed. However, the increase in true positives of about 14 patients helped to defray costs of increased spray.
+We subsequently tried another model of 30% threshold to be considered as a positive case, which deferred from the default 50%. This means that more cases will be considered as positives, and we are able to catch more true positive cases. However, more false negative cases will be casught as well, and a wider area has to be sprayed. However, the increase in true positives of about 14 patients helped to defray costs of increased spray.
 
-We therefore would prefer to choose 
+We therefore would prefer to choose the model of 30% threshold for positive cases.
 
 
 
 ---
 
 ## Conclusions, Recommendations:
+
+Probability of WNV increases exponentially from week 31 to 35, especially when there is a combination of high temperature and precipitation (rainfall). Certain traps have higher chance of contracting WNV (e.g. T900, T003, T028).
+
+We recommend using Logistic Regression with 30% threshold to predict WNV
+
+    89% of WNV+ is being captured our model (based on sensitivity)
+    15% of our positive predictions are correct
+    More cost-effective for the city 
+
+Benefits to public health are economically significant when compared to the cost of eradicating mosquitoes
+    
+    About 14 more true positives can be prevented in 2014, preventing medical costs
+    
+    Cost of spray is lower than short and long term medical costs
+
+
 
 
 
