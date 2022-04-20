@@ -78,6 +78,13 @@ Benefits to public health are economically significant when compared to the cost
     
     Cost of spray is lower than short and long term medical costs
 
+Next steps:
+
+    Further tune parameters to improve accuracy
+        More weather features and their interaction
+        Grouping of traps based on risk level (likelihood of WNV)
+
+    
 
 
 
