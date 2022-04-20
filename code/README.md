@@ -52,7 +52,11 @@ Eventually, we decided to go for Logistic Regression as it is able to quantify t
 
 #### About: Cost Benefit Analysis
 
-Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the cost saved if citizens do not get infected with the virus. By estimating the area where we need to spray based on a radius around the traps, we found out that the cost saved and public good done will be higher than the costs of spraying.
+Using an estimate of the number of people who might get the virus based on our model and past data (which indicates an approximate infection rate), we are able to get the number of people who might get the virus, and subsequently cost saved if citizens do not get infected with the virus. By estimating the area where we need to spray based on a 1Km radius around the traps, we found out that the cost saved will be higher than the costs of spraying, even before factoring any factors of increased public health and reduced disamenities.
+
+We subsequently tried another model of 30% threshold to be considered as a positive case, which deferred from the default 50%. This means that more cases will be considered as positives, and we are able to catch more true positive cases. However, more false negative cases will be cause as well, and a wider area has to be sprayed. However, the increase in true positives of about 14 patients helped to defray costs of increased spray.
+
+We therefore would prefer to choose 
 
 
 
